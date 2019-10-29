@@ -19,16 +19,16 @@ make
 
 3. Build Caffe and pycaffe
 ```
-cd $PAMS_ROOI/caffe
+cd $PAMS_ROOT/caffe
 make -j8 && make pycaffe
 ```
 
 ## Train/Eval
 1. Prepare the training, val, test data
-2. Train/Test the PAMS-FCN detector. Outputs are svaed under $PAMS_ROOI/output/
+2. Train/Test the PAMS-FCN detector. Outputs are svaed under $PAMS_ROOT/output/
 ```
-cd $RFCN_ROOT
-./experiments/scripts/rfcn_end2end[_ohem].sh [GPU_ID] [NET] [DATASET] [--set ...]
+cd $PAMS_ROOT
+./experiments/scripts/pams_fcn_end2end/[_ohem].sh [GPU_ID] [NET] [DATASET] [--set ...]
 ```
 
 ## Main Results
