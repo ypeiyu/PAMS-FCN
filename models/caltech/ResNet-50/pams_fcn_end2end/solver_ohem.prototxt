@@ -1,0 +1,16 @@
+train_net: "models/caltech/ResNet-50/pams_fcn_end2end/pams_fcn_ohem_train.prototxt"
+base_lr: 0.002
+lr_policy: "multistep"
+gamma: 0.1
+stepvalue: 2000
+stepvalue: 3000
+display: 20
+
+momentum: 0.9
+weight_decay: 0.0005
+# We disable standard caffe solver snapshotting and implement our own snapshot
+# function
+# We still use the snapshot prefix, though
+snapshot_prefix: "pams_fcn"
+iter_size: 8
+# debug_info: true
