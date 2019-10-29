@@ -8,7 +8,7 @@ We present a part-aware multi-scale FCN for pedestrian detection. In this method
 ## Installation
 1. Clone the PAMS-FCN repository into `$PAMS_ROOT`
 ```
-git clone
+git clone https://github.com/ypeiyu/PAMS-FCN.git
 ```
 
 2. Build the Cython modules
@@ -25,13 +25,10 @@ make -j8 && make pycaffe
 
 ## Train/Eval
 1. Prepare the training, val, test data
-2. Train the PAMS-FCN detector. Outputs are svaed under $PAMS_ROOI/output/
+2. Train/Test the PAMS-FCN detector. Outputs are svaed under $PAMS_ROOI/output/
 ```
-python model/pams/xxx.py
-```
-3. Test the PAMS-FCN detector. Outputs are svaed under $PAMS_ROOI/output/
-```
-python model/pams/xxx.py
+cd $RFCN_ROOT
+./experiments/scripts/rfcn_end2end[_ohem].sh [GPU_ID] [NET] [DATASET] [--set ...]
 ```
 
 ## Main Results
@@ -40,14 +37,3 @@ We conduct an ablation study to validate the effectivenss of the proposed networ
 **Table 1**. Result of the ablation study on the Heavy Occlusion subset of the Caltech Dataset and the Caltech-New dataset. Runtime is evaluated on a single GTX 1080Ti GPU per image.
 
 ![ablation study](./image/table1.png)
-
-
-
-haha *empha1* and **empha2** hh
-
-
-link ex:
-
-For more information, you can refer to [Chai benchmarks](https://github.com/chai-benchmarks/chai "Title")....
-
-
