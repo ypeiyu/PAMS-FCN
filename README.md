@@ -37,8 +37,10 @@ cd $PAMS_ROOT
 ```
 
 ## Main Results
-We conduct an ablation study to validate the effectivenss of the proposed network.
+1. We conduct an ablation study to validate the effectivenss of the proposed network.
 
 **Table 1**. Result of the ablation study on the Heavy Occlusion subset of the Caltech Dataset and the Caltech-New dataset. Runtime is evaluated on a single GTX 1080Ti GPU per image.
 
 ![ablation study](./image/table1.png)
+
+2. The main detection results can be found [here](https://drive.google.com/open?id=0BzKzrI_SkD1_WVVTSmQxU0dVRzA "Title").
