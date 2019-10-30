@@ -5,6 +5,11 @@
 
 We present a part-aware multi-scale FCN for pedestrian detection. In this method, the part-aware RoI pooling module can generate high detection confidence score for occluded pedestrians, while the multi-scale FCN is constructed to detect small-scale and large-scale pedestrians respectively on feature maps of different resolutions.
 
+## Requirements
+1. Software: Please use the [Microsoft-version Caffe](https://github.com/Microsoft/caffe/tree/1a2be8ecf9ba318d516d79187845e90ac6e73197 "Title") and follow the usual [instructions](http://caffe.berkeleyvision.org/installation.html "Title").
+
+2. Hardware: NVIDIA GPU with 8GB or larger memory is required.
+
 ## Installation
 1. Clone the PAMS-FCN repository into `$PAMS_ROOT`
 ```
@@ -24,8 +29,8 @@ make -j8 && make pycaffe
 ```
 
 ## Train/Eval
-1. Prepare the training, val, test data
-2. Train/Test the PAMS-FCN detector. Outputs are svaed under $PAMS_ROOT/output/
+1. It should be prepare the training, val and test data as VOC format.
+2. Train/Test the PAMS-FCN detector. Outputs are svaed under `$PAMS_ROOT/output/`
 ```
 cd $PAMS_ROOT
 ./experiments/scripts/pams_fcn_end2end/[_ohem].sh [GPU_ID] [NET] [DATASET] [--set ...]
